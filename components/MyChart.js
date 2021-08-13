@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-import Chart from "react-apexcharts";
+
+// import Chart from "react-apexcharts";
+import dynamic from "next/dynamic";
+const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
+
 export default function MyChart() {
   const [options, setOptions] = useState({
     chart: {

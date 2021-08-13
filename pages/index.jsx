@@ -1,4 +1,5 @@
 import Head from "next/head";
+import MyChart from "../components/MyChart";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
       </Head>
       <main>
         <h1 className="title">Our Chart</h1>
-        <p>The chart goes here</p>
+        <MyChart />
       </main>
       <style>{`
         .container {
